@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="cadastro.css">
+  <title>Sua Página</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo_caixa">
+      <img src="assets/Logo_empty.png" title="Urban logo" class="logo" />
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    
+
+    <div class="titulo-separador">
+      <input type="text" id="filtrar-tabela" placeholder="DIgite o nome do cliente">
+      <h2>Encomendas</h2>
+      <hr>
+
+    </div>
+
+    <table class="excel-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Valor</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="cliente">
+          <td class="nome">Igor</td>
+          <td class="produto">Moletom Bandit</td>
+          <td class="qtde">999</td>
+          <td class="valorUnitario">25</td>
+          <td class="valorTotal">-</td>
+        </tr>
+        <tr class="cliente">
+          <td class="nome">Jonas</td>
+          <td class="produto">Juice's Bag</td>
+          <td class="qtde">200</td>
+          <td class="valorUnitario">18</td>
+          <td class="valorTotal">-</td>
+        </tr>
+        <tr class="cliente">
+          <td class="nome">Connor</td>
+          <td class="produto">999 T-Shirt</td>
+          <td class="qtde">300</td>
+          <td class="valorUnitario">10</td>
+          <td class="valorTotal">-</td>
+        </tr>
+        <tr class="cliente">
+          <td class="nome">Bryan</td>
+          <td class="produto">Disco Legends Never Die</td>
+          <td class="qtde">50 </td>
+          <td class="valorUnitario">30</td>
+          <td class="valorTotal">-</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+
+    <section class="container_title">
+      <h1>Adicionar nova encomenda</h1>
+    </section>
+    <hr>
+    <section class="container_form">
+      <form action="">
+
+
+        <label for="nome_input" name="nome_label" id="nome_label">Nome:</label>
+        <input type="text" id="nome_input" name="nome_input" placeholder="">
+
+
+        <label for="qtde_input" id="qtde_label" name="qtde_label">Qtde:</label>
+        <input type="number" id="qtde_input" name="qtde_input" placeholder="Digite a quantidade encomendada">
+
+
+        <label for="produto_select" id="produto_label" name="produto_label">Produto:</label>
+        <select name="produto_select" id="produto_select">
+          <option value="0">Selecione</option>
+          <option value="Juice's Bag">Juice's Bag</option>
+          <option value="999 T-Shirt">999 T-Shirt</option>
+          <option value="Moletom Bandit">Moletom Bandit</option>
+          <option value="Disco Legends Never Die">Disco Legends Never Die</option>
+        </select>
+
+        <label for="valorUnitario_input" id="valorUnitario_label" name="valorUnitario_label">R$
+          Unitário:</label>
+        <input type="text" name="valorUnitario_input" id="valorUnitario_input"
+          placeholder="Digite o valor unitário do produto">
+
+        <button>Adicionar</button>
+      </form>
+    </section>
+
+  </main>
+  <script src='./calculaTotal.js'></script>
+  <script src='cadastro.js'></script>
+</body>
+
+</html>
