@@ -97,3 +97,17 @@ hr {
     border: none;
     padding: 5px;
 }
+
+#buscar-encomendas {
+    background-color: #808080; /* Cor cinza */
+    color: #ffffff; /* Cor do texto branco */
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    padding: 10px 20px; /* Adiciona preenchimento */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Adiciona o cursor de ponteiro */
+  }
+  
+  #buscar-encomendas:hover {
+    background-color: #696969; /* Cor um pouco mais escura no hover */
+  }
